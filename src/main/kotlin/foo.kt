@@ -4,12 +4,12 @@ fun main(args: Array<String>) {
     val persona2 = persona.copy()
     val persona3 = persona.copy(lastName = "Gomez")
 
-    if(persona == persona2){
-        println("Hello ${persona.firstName}")
-    }else{
-        println("not equal")
-    }
+    val message = if(persona == persona2) "Hello ${persona.firstName}"  else "not equal"
 
+    println(message)
+
+    if (persona3 != persona)
+        println("old ${persona.lastName} New ${persona3.lastName}")
 
 }
 

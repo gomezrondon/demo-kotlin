@@ -3,7 +3,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        PersonaJava persona = new PersonaJava("javier");
+        PersonaJava persona = new PersonaJava("Javier");
         final PersonaJava persona2 = new PersonaJava(persona); // copy
         final PersonaJava persona3 = new PersonaJava(persona); // copy
         persona3.setLastName("Gomez");
@@ -12,6 +12,9 @@ public class Main {
             System.out.println("Hello "+persona.getFirstName());
         else
             System.out.println("not equal");
+
+        if(!persona.equals(persona3))
+            System.out.println("old "+persona.getLastName()+" new "+persona3.getLastName());
     }
 
 }
