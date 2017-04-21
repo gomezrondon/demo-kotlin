@@ -17,6 +17,12 @@ fun main(args: Array<String>) {
         println("zz $i zz".coffeNow()) //Extension Functions
     }
 
+    println("Hola " add "Mundo!") //infix function
+    
+}
+
+infix fun String.add(str:String):String{
+    return this + str
 }
 
 data class PersonKT(var firstName:String="", var lastName:String="", var age: Int=0)

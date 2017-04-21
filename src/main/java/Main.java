@@ -21,6 +21,8 @@ public class Main {
             StringUtil.coffeNow("zz "+i+" zz");
         }
 
+        // No equivalent to infix function
+
     }
 
 }
