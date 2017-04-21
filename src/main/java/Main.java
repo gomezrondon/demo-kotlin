@@ -5,7 +5,9 @@ public class Main {
 
         PersonKT persona = new PersonKT();
 
-        System.out.println("name is: "+persona.getFirstName().length());//NullPointerException
+        String name =  (persona.getFirstName() !=null) ? persona.getFirstName() : "Elvis Operator";
+
+        System.out.println("name is: "+ name);
 
     }
 
