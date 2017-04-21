@@ -1,10 +1,12 @@
 fun main(args: Array<String>) {
 
-    println("7 * X = "+metodoSiete(5)(7))
+    5.multiply(7).show()
 
 }
 
-fun metodoSiete(cinco:Int): (x:Int)-> Int {
-    return {x -> x * cinco}
+val show: Int.() -> Unit = {println("7 * X = $this")}
+
+val multiply: Int.(x: Int)  -> Int = { x ->
+    this * x
 }
 
