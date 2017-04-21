@@ -3,12 +3,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        PersonKT persona = new PersonKT();
+        Main main = new Main();
 
-        String name =  (persona.getFirstName() !=null) ? persona.getFirstName() : "Elvis Operator";
+        MultiplicaLambda ml1 = (x, y) -> x * y;
 
-        System.out.println("name is: "+ name);
+        System.out.println("7 * X = "+main.metodoSiete(ml1, 5));
 
+    }
+
+    public int metodoSiete(MultiplicaLambda multiplica, int cinco){
+        return multiplica.multi(7, cinco);
+    }
+
+    interface MultiplicaLambda{
+        int multi(int cinco, int siete);
     }
 
 }

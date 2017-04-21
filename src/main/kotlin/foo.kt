@@ -1,13 +1,14 @@
 fun main(args: Array<String>) {
 
-    val persona:PersonKT = PersonKT(firstName = null)
-
-    val name = persona.firstName ?: "Elvis Operator"
-
-    println("name is: $name")
+    println("7 * X = "+metodoSiete(5,::multiplicaLambda))
 
 }
 
-data class PersonKT(var firstName:String?=null, var lastName:String?=null, var age: Int=0)
+fun metodoSiete(cinco:Int, func:(Int, Int)-> Int): Int {
+    return func(7,cinco)
+}
 
 
+fun multiplicaLambda(cinco:Int, siete:Int):Int{
+    return siete * cinco
+}
