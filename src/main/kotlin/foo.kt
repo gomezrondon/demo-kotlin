@@ -18,7 +18,10 @@ fun main(args: Array<String>) {
     }
 
     println("Hola " add "Mundo!") //infix function
-    
+
+    val personaJ = PersonaJava("Pepe","Perez",20) // Java in Kotlin
+    println("Java: ${personaJ.toString()}")
+
 }
 
 infix fun String.add(str:String):String{
