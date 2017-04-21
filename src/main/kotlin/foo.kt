@@ -1,3 +1,5 @@
+import util.coffeNow
+
 fun main(args: Array<String>) {
 
     val persona:PersonKT = PersonKT(firstName = "Javier")
@@ -10,6 +12,10 @@ fun main(args: Array<String>) {
 
     if (persona3 != persona)
         println("old ${persona.lastName} New ${persona3.lastName}")
+
+    for(i in 1..3){
+        println("zz $i zz".coffeNow()) //Extension Functions
+    }
 
 }
 

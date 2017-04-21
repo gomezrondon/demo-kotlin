@@ -1,3 +1,4 @@
+import util.StringUtil;
 
 public class Main {
 
@@ -15,6 +16,11 @@ public class Main {
 
         if(!persona.equals(persona3))
             System.out.println("old "+persona.getLastName()+" new "+persona3.getLastName());
+
+        for(int i=0;i < 3 ;i++){
+            StringUtil.coffeNow("zz "+i+" zz");
+        }
+
     }
 
 }
