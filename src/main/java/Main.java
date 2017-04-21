@@ -23,6 +23,9 @@ public class Main {
 
         // No equivalent to infix function
 
+        PersonKT personKT = new PersonKT("Pepe","Perez",20);
+        System.out.println("Kotlin: "+personKT.toString());
+
     }
 
 }
