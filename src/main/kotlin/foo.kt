@@ -1,16 +1,11 @@
 fun main(args: Array<String>) {
 
-    val persona:PersonKT = PersonKT(firstName = "Javier")
-    val persona2 = persona.copy()
-    val persona3 = persona.copy(lastName = "Gomez")
+    val persona:PersonKT = PersonKT(firstName = null)
 
-    if(persona == persona2){
-        println("Hello ${persona.firstName}")
-    }else{
-        println("not equal")
-    }
+  //  println("name is: ${persona.firstName!!.length}") //KotlinNullPointerException
 
+    println("name is: ${persona.firstName?.length}")
 
 }
 
-data class PersonKT(var firstName:String="", var lastName:String="", var age: Int=0)
+data class PersonKT(var firstName:String?=null, var lastName:String?=null, var age: Int=0)
