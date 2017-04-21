@@ -1,4 +1,5 @@
 import util.coffeNow
+import java.io.File
 
 fun main(args: Array<String>) {
 
@@ -21,6 +22,14 @@ fun main(args: Array<String>) {
 
     val personaJ = PersonaJava("Pepe","Perez",20) // Java in Kotlin
     println("Java: ${personaJ.toString()}")
+
+    //Lambda Expressions
+    val lines = File("C:/temp/mock_data.csv").readLines() //Where is the try catch?
+    lines.map { it.toLowerCase() }
+            .map { it.split(",")}
+            .filter { it[1].startsWith("ant") }
+            .slice(1..5) // limit
+            .forEach { println(it) }
 
 }
 
