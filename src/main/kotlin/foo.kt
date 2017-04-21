@@ -1,6 +1,15 @@
 fun main(args: Array<String>) {
 
     val persona:PersonKT = PersonKT(firstName = "Javier")
+    val persona2 = persona.copy()
+    val persona3 = persona.copy(lastName = "Gomez")
+
+    if(persona == persona2){
+        println("Hello ${persona.firstName}")
+    }else{
+        println("not equal")
+    }
+
 
 }
 
