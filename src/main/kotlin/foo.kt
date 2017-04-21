@@ -28,4 +28,14 @@ infix fun String.add(str:String):String{
     return this + str
 }
 
-data class PersonKT(var firstName:String="", var lastName:String="", var age: Int=0)
+data class PersonKT(var firstName:String="", var lastName:String="", var age: Int=0){
+
+    @JvmOverloads// method Overload
+    fun specialConstructor(firstName:String="", lastName:String="", age: Int=0){
+        this.firstName = firstName
+        this.lastName = lastName
+        this.age = age
+
+    }
+
+}

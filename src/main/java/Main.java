@@ -26,6 +26,8 @@ public class Main {
         PersonKT personKT = new PersonKT("Pepe","Perez",20);
         System.out.println("Kotlin: "+personKT.toString());
 
+        personKT.specialConstructor("Pedro");// method Overload
+
     }
 
 }
