@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         PersonaJava persona = new PersonaJava("Javier");
-        final PersonaJava persona2 = new PersonaJava(persona); // copy
-        final PersonaJava persona3 = new PersonaJava(persona); // copy
+        final PersonaJava persona2 = persona.copy(); // copy
+        final PersonaJava persona3 = persona.copy("Gomez"); // copy
         persona3.setLastName("Gomez");
 
         if(persona.equals(persona2))
@@ -31,11 +31,22 @@ class PersonaJava{
         this.firstName = firstName;
     }
 
-    public PersonaJava(PersonaJava OldPersona){
-        this.firstName = OldPersona.getFirstName();
-        this.lastName = OldPersona.getLastName();
-        this.age = OldPersona.getAge();
+    public PersonaJava(String firstName, String lastName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
     }
+
+    public PersonaJava copy(){
+        return new PersonaJava(firstName,lastName,age);
+
+    }
+
+    public PersonaJava copy(String lastName){
+        return new PersonaJava(firstName,lastName,age);
+
+    }
+
 
     public String getFirstName() {
         return firstName;
