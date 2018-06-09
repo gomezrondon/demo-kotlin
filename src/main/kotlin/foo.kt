@@ -2,7 +2,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 fun main(args: Array<String>) {
-
+// beginning of a DSL
  val persona = PersonKT()
 
     persona{
