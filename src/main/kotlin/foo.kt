@@ -1,21 +1,21 @@
-import util.coffeNow
 
 fun main(args: Array<String>) {
 
     val count = PersonKT.staticMethodCountLetters("Javier")
-
+    val foo = PersonKT.FOO
     println("count: $count")
+    println("foo: $foo")
 
 }
 
 
 data class PersonKT(var firstName:String="", var lastName:String="", var age: Int=0){
 
-    constructor(firstName:String="") : this(firstName,lastName="",age=0)
-
     companion object{
-        @JvmStatic()
+      //  @JvmStatic()
         fun staticMethodCountLetters(str:String)=str.length
+       //const val FOO = 1
+       val FOO = 1
     }
 
 }
