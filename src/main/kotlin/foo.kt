@@ -1,10 +1,11 @@
 fun main(args: Array<String>) {
 
-    println("7 * X = "+metodoSiete(5)(7))
+    println("8 * X = "+metodoSiete(8)(5))
 
 }
 
-fun metodoSiete(cinco:Int): (x:Int)-> Int {
-    return {x -> x * cinco}
+// high level function with lambda
+fun metodoSiete(number:Int): (x:Int)-> Int {
+    return {x -> x * number}
 }
 
