@@ -2,7 +2,7 @@ import util.coffeNow
 
 fun main(args: Array<String>) {
 
-    for(i in 1..10){
+    for(i in 1..3){
         println("zz $i zz".coffeNow()) //Extension Functions
     }
 
