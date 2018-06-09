@@ -3,6 +3,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //Coparing the Copy method "impl manually"
         PersonaJava persona = new PersonaJava("javier");
         final PersonaJava persona2 = persona.copy(); // copy
         final PersonaJava persona3 = persona.copy("Gomez"); // copy

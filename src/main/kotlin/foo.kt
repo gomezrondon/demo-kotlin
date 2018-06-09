@@ -1,5 +1,6 @@
 fun main(args: Array<String>) {
 
+    //Coparing the Copy method "impl by kotlin"
     val persona:PersonKT = PersonKT(firstName = "Javier")
     val persona2 = persona.copy()
     val persona3 = persona.copy(lastName = "Gomez")
